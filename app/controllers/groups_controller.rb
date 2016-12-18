@@ -43,6 +43,7 @@ class GroupsController < ApplicationController
          flash[:alert] = "Group deleted"
          redirect_to groups_path
        end
+
          def join
    @group = Group.find(params[:id])
 
